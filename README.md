@@ -4,10 +4,9 @@ A modern, secure, and open-source chat application inspired by WhatsApp. Chat Bo
 ---
 
 ![Image](https://github.com/user-attachments/assets/6d5fa7d8-6b06-4c1e-a2cb-812ba0d04487)
-<p align="center">
-  
-  <img src="static/Chat%20Illustration.png" alt="Landing Page" width="400"/>
-</p>
+![Image](https://github.com/user-attachments/assets/06f6878f-2155-45d9-9059-a3353d545086)
+![Image](https://github.com/user-attachments/assets/2625b9f5-f532-4bf9-8c6c-5d5fc9b2b4a8)
+![Image](https://github.com/user-attachments/assets/4f541029-7f08-412b-b69e-16137fec8c2b)
 
 ---
 
@@ -100,7 +99,7 @@ Visit [http://127.0.0.1:5000/](http://127.0.0.1:5000/) in your browser.
 ## 👨‍💻 Team
 <table>
   <tr>
-    <td align="center"><img src="https://ui-avatars.com/api/?name=Baver+Koca&background=075e54&color=fff&size=80" width="60"/><br/><b>Baver Koca</b><br><a href="mailto:baver.koca00@gmail.com">Email</a> | <a href="https://github.com/BaverKoca">GitHub</a> | <a href="https://www.linkedin.com/in/baver-koca">LinkedIn</a></td>
+    <td align="center"><img src="https://ui-avatars.com/api/?name=Baver+Koca&background=075e54&color=fff&size=80" width="60"/><br/><b>Baver Koca</b></td>
     <td align="center"><img src="https://ui-avatars.com/api/?name=Sanusi&background=25d366&color=fff&size=80" width="60"/><br/><b>Sanusi</b></td>
     <td align="center"><img src="https://ui-avatars.com/api/?name=Saeed+Bizri&background=128c7e&color=fff&size=80" width="60"/><br/><b>Saeed Bizri</b></td>
   </tr>
@@ -109,10 +108,10 @@ Visit [http://127.0.0.1:5000/](http://127.0.0.1:5000/) in your browser.
 ---
 
 ## 📬 Contact
-<p>
-  <a href="mailto:baver.koca00@gmail.com"><img src="https://img.icons8.com/color/32/gmail-new.png" alt="Email" style="vertical-align:middle;"> baver.koca00@gmail.com</a><br>
-  <a href="https://github.com/BaverKoca"><img src="https://img.icons8.com/ios-glyphs/32/25d366/github.png" alt="GitHub" style="vertical-align:middle;"> github.com/BaverKoca</a><br>
-  <a href="https://www.linkedin.com/in/baver-koca"><img src="https://img.icons8.com/color/32/linkedin.png" alt="LinkedIn" style="vertical-align:middle;"> linkedin.com/in/baver-koca</a>
+<p align="center>
+  <a href="mailto:baver.koca00@gmail.com"><img src="https://img.icons8.com/color/32/gmail-new.png" alt="Email" style="vertical-align:middle;"></a>
+  <a href="https://github.com/BaverKoca"><img src="https://img.icons8.com/ios-glyphs/32/25d366/github.png" alt="GitHub" style="vertical-align:middle;"></a>
+  <a href="https://www.linkedin.com/in/baver-koca"><img src="https://img.icons8.com/color/32/linkedin.png" alt="LinkedIn" style="vertical-align:middle;"></a>
 </p>
 
 ---
