@@ -1,10 +1,10 @@
-# Chat Box (Whatsapp-Clone)
-
+# Chat Box
 A modern, secure, and open-source chat application inspired by WhatsApp. Chat Box features a beautiful web UI, real-time encrypted messaging, and a Python client/server for advanced users. Built with Flask, Python, and strong cryptography.
 
 ---
 
 <p align="center">
+  ![Image](https://github.com/user-attachments/assets/6d5fa7d8-6b06-4c1e-a2cb-812ba0d04487)
   <img src="static/Chat%20Illustration.png" alt="Landing Page" width="400"/>
 </p>
 
