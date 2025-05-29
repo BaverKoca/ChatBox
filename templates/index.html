@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome | Whatsapp Clone</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: #ece5dd; margin: 0; padding: 0; }
+        .header { background: #075e54; color: #fff; box-shadow: 0 2px 8px #0001; }
+        .header-content { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 18px 24px; }
+        .logo { height: 36px; margin-right: 10px; vertical-align: middle; }
+        .title { font-size: 1.7rem; font-weight: bold; letter-spacing: 1px; }
+        .nav a { color: #fff; text-decoration: none; margin: 0 16px; font-size: 1.05rem; transition: color 0.2s; }
+        .nav a:hover, .chat-btn { color: #25d366; }
+        .chat-btn { background: #25d366; color: #fff !important; padding: 8px 22px; border-radius: 4px; margin-left: 18px; font-weight: bold; transition: background 0.2s; }
+        .chat-btn:hover { background: #128c7e; color: #fff; }
+        .hero { display: flex; align-items: center; justify-content: center; background: #fff; padding: 48px 0 32px 0; box-shadow: 0 2px 16px #0001; }
+        .hero-content { max-width: 500px; text-align: left; }
+        .hero h1 { font-size: 2.5rem; color: #075e54; margin-bottom: 18px; }
+        .hero p { font-size: 1.2rem; color: #444; margin-bottom: 32px; }
+        .hero-btn { background: #25d366; color: #fff; padding: 14px 36px; border-radius: 4px; text-decoration: none; font-size: 1.15rem; font-weight: bold; letter-spacing: 1px; transition: background 0.2s; box-shadow: 0 2px 8px #0001; }
+        .hero-btn:hover { background: #128c7e; }
+        .hero-img { height: 260px; margin-left: 48px; border-radius: 12px; box-shadow: 0 2px 16px #0002; }
+        @media (max-width: 900px) {
+            .hero { flex-direction: column; text-align: center; }
+            .hero-img { margin: 32px 0 0 0; height: 180px; }
+            .hero-content { text-align: center; }
+        }
+        .features { background: #f7f7f7; padding: 48px 0 32px 0; text-align: center; }
+        .features h2 { color: #075e54; font-size: 2rem; margin-bottom: 32px; }
+        .features-list { display: flex; justify-content: center; gap: 48px; flex-wrap: wrap; }
+        .feature { background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 28px 24px; width: 260px; margin-bottom: 24px; }
+        .feature img { height: 48px; margin-bottom: 14px; }
+        .feature h3 { color: #25d366; margin-bottom: 10px; }
+        .feature p { color: #444; font-size: 1rem; }
+        .team { background: #fff; padding: 48px 0 32px 0; text-align: center; }
+        .team h2 { color: #075e54; font-size: 2rem; margin-bottom: 32px; }
+        .team-list { display: flex; justify-content: center; gap: 48px; flex-wrap: wrap; }
+        .member { display: flex; flex-direction: column; align-items: center; font-size: 1.1rem; color: #222; }
+        .avatar { border-radius: 50%; margin-bottom: 12px; box-shadow: 0 2px 8px #0001; width: 80px; height: 80px; }
+        .footer { background: #075e54; color: #fff; text-align: center; padding: 18px 0; margin-top: 0; font-size: 1rem; box-shadow: 0 -2px 8px #0001; }
+        .footer-content a { color: #25d366; text-decoration: underline; }
+        .footer-content a:hover { color: #fff; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Logo" class="logo">
+            <span class="title">Whatsapp Clone</span>
+            <nav class="nav">
+                <a href="#features">Features</a>
+                <a href="#team">Team</a>
+                <a href="/templates/chat.html" class="chat-btn">Go to Chat</a>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Simple. Secure. Reliable Messaging.</h1>
+            <p>Welcome to Whatsapp Clone — a modern, end-to-end encrypted chat platform inspired by WhatsApp. Enjoy real-time messaging with privacy and style.</p>
+            <a href="/templates/chat.html" class="hero-btn">Start Chatting</a>
+        </div>
+        <img src="https://static.whatsapp.net/rsrc.php/v3/ye/r/qr5kB6dPOoy.png" alt="Chat Illustration" class="hero-img">
+    </section>
+    <section class="features" id="features">
+        <h2>Why Use Whatsapp Clone?</h2>
+        <div class="features-list">
+            <div class="feature">
+                <img src="https://img.icons8.com/fluency/48/lock-2.png" alt="Secure">
+                <h3>End-to-End Encryption</h3>
+                <p>Your messages are private and secure, just like WhatsApp.</p>
+            </div>
+            <div class="feature">
+                <img src="https://img.icons8.com/fluency/48/clock--v1.png" alt="Real-time">
+                <h3>Real-Time Messaging</h3>
+                <p>Send and receive messages instantly with a modern interface.</p>
+            </div>
+            <div class="feature">
+                <img src="https://img.icons8.com/fluency/48/user-group-man-man.png" alt="Team">
+                <h3>Open Source Teamwork</h3>
+                <p>Built by students for everyone. Free, open, and collaborative.</p>
+            </div>
+        </div>
+    </section>
+    <section class="team" id="team">
+        <h2>Meet the Team</h2>
+        <div class="team-list">
+            <div class="member">
+                <img src="https://ui-avatars.com/api/?name=Baver+Koca&background=075e54&color=fff&size=80" class="avatar" alt="Baver Koca">
+                <span>Baver Koca</span>
+            </div>
+            <div class="member">
+                <img src="https://ui-avatars.com/api/?name=Sanusi&background=25d366&color=fff&size=80" class="avatar" alt="Sanusi">
+                <span>Sanusi</span>
+            </div>
+            <div class="member">
+                <img src="https://ui-avatars.com/api/?name=Saeed+Bizri&background=128c7e&color=fff&size=80" class="avatar" alt="Saeed Bizri">
+                <span>Saeed Bizri</span>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <span>Copyright &copy; 2025 Whatsapp Clone. ®</span>
+        </div>
+    </footer>
+</body>
+</html>
