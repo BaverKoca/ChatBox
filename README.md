@@ -108,7 +108,7 @@ Visit [http://127.0.0.1:5000/](http://127.0.0.1:5000/) in your browser.
 ---
 
 ## 📬 Contact
-<p align="center>
+<p>
   <a href="mailto:baver.koca00@gmail.com"><img src="https://img.icons8.com/color/32/gmail-new.png" alt="Email" style="vertical-align:middle;"></a>
   <a href="https://github.com/BaverKoca"><img src="https://img.icons8.com/ios-glyphs/32/25d366/github.png" alt="GitHub" style="vertical-align:middle;"></a>
   <a href="https://www.linkedin.com/in/baver-koca"><img src="https://img.icons8.com/color/32/linkedin.png" alt="LinkedIn" style="vertical-align:middle;"></a>
