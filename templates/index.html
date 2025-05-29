@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome | Whatsapp Clone</title>
+    <title>Welcome | Chat Box</title>
     <style>
         body { font-family: 'Segoe UI', Arial, sans-serif; background: #ece5dd; margin: 0; padding: 0; }
-        .header { background: #075e54; color: #fff; box-shadow: 0 2px 8px #0001; }
+        .header { background: #075e54; color: #fff; box-shadow: 0 2px 8px #0001; position: sticky; top: 0; z-index: 100; }
         .header-content { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 18px 24px; }
         .logo { height: 36px; margin-right: 10px; vertical-align: middle; }
         .title { font-size: 1.7rem; font-weight: bold; letter-spacing: 1px; }
@@ -40,16 +40,23 @@
         .footer { background: #075e54; color: #fff; text-align: center; padding: 18px 0; margin-top: 0; font-size: 1rem; box-shadow: 0 -2px 8px #0001; }
         .footer-content a { color: #25d366; text-decoration: underline; }
         .footer-content a:hover { color: #fff; }
+        .contact-section { background: #fff; padding: 40px 0 32px 0; text-align: center; }
+        .contact-section h2 { color: #075e54; font-size: 2rem; margin-bottom: 24px; }
+        .contact-list { display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; margin-top: 10px; }
+        .contact-link { color: #25d366; text-decoration: none; font-size: 1.1rem; margin: 0 8px; display: flex; align-items: center; gap: 6px; }
+        .contact-link img { margin-right: 6px; }
+        .contact-link:hover { color: #128c7e; text-decoration: underline; }
     </style>
 </head>
 <body>
     <header class="header">
         <div class="header-content">
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Logo" class="logo">
-            <span class="title">Whatsapp Clone</span>
+            <span class="title">Chat Box</span>
             <nav class="nav">
                 <a href="#features">Features</a>
                 <a href="#team">Team</a>
+                <a href="#contact">Contact</a>
                 <a href="/chat" class="chat-btn">Go to Chat</a>
             </nav>
         </div>
@@ -57,13 +64,13 @@
     <section class="hero">
         <div class="hero-content">
             <h1>Simple. Secure. Reliable Messaging.</h1>
-            <p>Welcome to Whatsapp Clone — a modern, end-to-end encrypted chat platform inspired by WhatsApp. Enjoy real-time messaging with privacy and style.</p>
+            <p>Welcome to Chat Box — a modern, end-to-end encrypted chat platform. Enjoy real-time messaging with privacy and style.</p>
             <a href="/chat" class="hero-btn">Start Chatting</a>
         </div>
-        <img src="https://static.whatsapp.net/rsrc.php/v3/ye/r/qr5kB6dPOoy.png" alt="Chat Illustration" class="hero-img">
+        <img src="{{ url_for('static', filename='Chat Illustration.png') }}" alt="Chat Illustration" class="hero-img">
     </section>
     <section class="features" id="features">
-        <h2>Why Use Whatsapp Clone?</h2>
+        <h2>Why Use Chat Box?</h2>
         <div class="features-list">
             <div class="feature">
                 <img src="https://img.icons8.com/fluency/48/lock-2.png" alt="Secure">
@@ -99,9 +106,23 @@
             </div>
         </div>
     </section>
+    <section class="contact-section" id="contact">
+        <h2>Contact</h2>
+        <div class="contact-list">
+            <a href="mailto:baver.koca00@gmail.com" class="contact-link" title="Email">
+                <img src="https://img.icons8.com/color/32/gmail-new.png" alt="Email" style="vertical-align:middle;"> Email
+            </a>
+            <a href="https://github.com/BaverKoca" class="contact-link" target="_blank" title="GitHub">
+                <img src="https://img.icons8.com/ios-glyphs/32/25d366/github.png" alt="GitHub" style="vertical-align:middle;"> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/baver-koca" class="contact-link" target="_blank" title="LinkedIn">
+                <img src="https://img.icons8.com/color/32/linkedin.png" alt="LinkedIn" style="vertical-align:middle;"> LinkedIn
+            </a>
+        </div>
+    </section>
     <footer class="footer">
         <div class="footer-content">
-            <span>Copyright &copy; 2025 Whatsapp Clone. ®</span>
+            <span>Copyright &copy; 2025 Chat Box.<br>Developed by Baver Koca.</span>
         </div>
     </footer>
 </body>
