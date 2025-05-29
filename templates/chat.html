@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Whatsapp Clone</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #ece5dd; margin: 0; padding: 0; }
+        .header { background: #075e54; color: #fff; padding: 16px 0; text-align: center; box-shadow: 0 2px 8px #0001; display: flex; align-items: center; justify-content: center; }
+        .logo { height: 32px; margin-right: 12px; vertical-align: middle; }
+        .title { font-size: 1.6rem; font-weight: bold; letter-spacing: 1px; }
+        .container { max-width: 500px; margin: 40px auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 24px; }
+        #messages { min-height: 200px; background: #f7f7f7; border-radius: 4px; padding: 12px; margin-bottom: 16px; overflow-y: auto; max-height: 300px; }
+        form { display: flex; margin-top: 12px; }
+        input[type=text] { flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem; }
+        button { background: #25d366; color: #fff; border: none; padding: 10px 18px; border-radius: 4px; margin-left: 8px; cursor: pointer; font-size: 1rem; }
+        button:hover { background: #128c7e; }
+        .msg { margin: 8px 0; padding: 10px; background: #dcf8c6; border-radius: 4px; display: flex; align-items: center; }
+        .sender { font-weight: bold; color: #075e54; margin-right: 8px; }
+        .text { color: #222; word-break: break-word; }
+        .empty { color: #888; text-align: center; margin: 24px 0; }
+        .footer { background: #075e54; color: #fff; text-align: center; padding: 12px 0; margin-top: 40px; border-radius: 0 0 8px 8px; font-size: 0.95rem; box-shadow: 0 -2px 8px #0001; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Logo" class="logo">
+        <span class="title">Whatsapp Clone</span>
+    </header>
+    <div class="container">
+        <div id="messages">
+            {% if messages %}
+                {% for msg in messages %}
+                    <div class="msg">
+                        <span class="sender">{{ msg.split(':')[0] }}</span>
+                        <span class="text">{{ msg.split(':', 1)[1] }}</span>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <div class="empty">No messages yet. Start the conversation!</div>
+            {% endif %}
+        </div>
+        <form action="/send" method="post" autocomplete="off">
+            <input type="text" name="message" placeholder="Type your message" autocomplete="off" required autofocus>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <footer class="footer">
+        <span>&copy; 2025 Whatsapp Clone </span>
+    </footer>
+    <script>
+        // Auto-scroll to bottom of messages
+        const messagesDiv = document.getElementById('messages');
+        messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        // Optional: auto-refresh messages every 5 seconds
+        setInterval(() => { window.location.reload(); }, 5000);
+    </script>
+</body>
+</html>
